@@ -1,0 +1,110 @@
+/* CSS for the fade-in and fade-out effect */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('login_bg.jpg'); /* Replace 'your-image.jpg' with the filename of your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+/* Apply a blur effect to the translucent boxes */
+.translucent-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 10px;
+    height: 60%;
+    width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center horizontally */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Style the "Sign Up" heading */
+.translucent-box h1 {
+    font-size: 24px;
+    color: #fff; /* Customize the color as needed */
+}
+
+/* Style the "Sign In" heading */
+.translucent-box h2 {
+    font-size: 20px;
+    color: #fff; /* Customize the color as needed */
+}
+
+/* Position the "Login for Existing User" button below login or register buttons */
+#toggleForm {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    width: 100%; /* Make the button full width */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 90%;
+    margin-left: 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+/* Additional styles can be added as needed */
+
+/* Button container styles */
+.button-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .translucent-box {
+        width: 100%;
+    }
+}

@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('sakura.jpg');
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Add this CSS to your stylesheet */
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color:rgba(255, 255, 255, 0.5); /* Set your preferred background color */
+    color: #970377; /* Set your preferred text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure it's above other content */
+}
+
+
+.info-card{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: calc(50% - 40px);
+    flex-basis: calc(50% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add margin between cards */
+    opacity: 1; /* Make the cards translucent */
+}
+
+@keyframes fade-in_left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fade-in_right {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#family.animate-card {
+    animation: fade-in_left 1.5s ease backwards;
+    visibility: visible;
+}
+
+#school.animate-card {
+    animation: fade-in_right 1.5s ease backwards;
+    animation-delay: 0.5s; 
+    visibility: visible;
+}
+
+#college.animate-card {
+    animation: fade-in_left 1.5s ease backwards;
+    animation-delay: 1s;
+    visibility: visible;
+}
+
+#hobby.animate-card {
+    animation: fade-in_right 1.5s ease backwards;
+    animation-delay: 1.5s; 
+    visibility: visible;
+}
+
+#achievements.animate-card {
+    animation: fade-in_left 1.5s ease backwards;
+    animation-delay: 2s; 
+    visibility: visible;
+}
+
+#vision.animate-card {
+    animation: fade-in_right 1.5s ease backwards;
+    animation-delay: 2.5s; 
+    visibility: visible;
+}
+
+.info-card:hover {
+    background-color: rgba(255, 255, 255,0.5);
+    transform: scale(1.03);
+}
+
+.info-media {
+    width: 100%; /* Set the width of the container */
+    height: 200px; /* Set the desired height for the images */
+    overflow: hidden; /* Hide any overflow if the images are larger */
+}
+
+.info-media img {
+    width: 100%; /* Make the images stretch to fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.info-details {
+    display: none;
+    margin-top: 10px;
+}
+
+
+#family {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#school {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#college {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#hobby {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#achievements {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+#vision {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color:rgba(255, 255, 255, 0.5);
+    color: #970377;
+    text-align: center;
+    padding: 20px;
+}
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Set the color you prefer for the text */
+}
+
+.header a {
+    width: 24px; /* Adjust the size of the icon as needed */
+    height: 24px; /* Adjust the size of the icon as needed */
+    margin-right: 8px; /* Adjust the spacing between the icon and text */
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    width: calc(50% - 20px); /* 50% width with margin in between */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    overflow: auto; /* Add overflow for scrolling if content exceeds the overlay */
+    text-align:center;
+}
+
+.overlay-content {
+    background-color:transparent;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color:#970377 ;
+}
+
+.overlay img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    width: 200px; 
+    height: 150px;
+    align-items: center;
+}
+
+.exit-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #970377;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.exit-button:hover {
+    color: #cf63b8;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #970377;
+}

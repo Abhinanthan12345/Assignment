@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="Aboutpage.css" id="light-mode-stylesheet" media="screen">
+    <link rel="stylesheet" href="DAboutpage.css" id="dark-mode-stylesheet" media="screen">
+    <link rel="stylesheet" href="DarkMode.css">
+    <script src="Aboutpage.js"></script>
+    <script src="Darkmode.js"></script>
+    <link rel="stylesheet" href="chat_box.css" id="light-mode-chatsheet" media="screen">
+    <link rel="stylesheet" href="Dchat_box.css" id="dark-mode-chatsheet" media="screen">
+    <title>About_me</title>
+</head>
+
+<body>
+    <div id="dark-mode-toggle" class="dark-mode-toggle">
+        🌙
+    </div>
+    <a href="homepage.html" class="back-to-home">Back to Homepage</a>
+    <header>
+        <h1>ABOUT ME</h1>
+    </header>
+
+    <main>
+        <section id="family" class="info-card" data-color="#3498db">
+            <h2>Family</h2>
+            <div class="info-media">
+                <img src="family.jpg" alt="Family Photo">
+            </div>
+        </section>
+
+        <section id="school" class="info-card" data-color="#e74c3c">
+            <h2>School</h2>
+            <div class="info-media">
+                <img src="school.jpg" alt="School Photo">
+            </div>
+        </section>
+
+        <section id="college" class="info-card" data-color="#27ae60">
+            <h2>College</h2>
+            <div class="info-media">
+                <img src="college.jpg" alt="College Photo">
+            </div>
+        </section>
+
+        <section id="hobby" class="info-card" data-color="#f39c12">
+            <h2>Hobby</h2>
+            <div class="info-media">
+                <img src="hobby.jpg" alt="Hobby Photo">
+            </div>
+        </section>
+
+        <section id="achievements" class="info-card" data-color="#9b59b6">
+            <h2>Achievements</h2>
+            <div class="info-media">
+                <img src="achievements.jpg" alt="Achievements Photo">
+            </div>
+        </section>
+
+        <section id="vision" class="info-card" data-color="#2c3e50">
+            <h2>Vision</h2>
+            <div class="info-media">
+                <img src="vision.jpg" alt="Vision Photo">
+            </div>
+        </section>
+        <div class="overlay">
+            <div class="overlay-content">
+                <button class="exit-button">Exit</button>
+                <img src="placeholder.gif" alt="Placeholder GIF">
+                <p>Description about the selected card.</p>
+            </div>
+        </div>
+
+        <div class="chat-box-toggle">
+            <div class="chat-icon">Chat</div>
+        </div>
+        <div class="chat-box">
+            <div class="chat-header">
+                <span class="chat-close" title="Close">x</span>
+                <span class="chat-icon">Chat</span>
+            </div>
+            <div class="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="chat-footer">
+                <textarea id="message-input" placeholder="Type your message..."></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+     <footer>
+        <p>&copy; 2023 TEMP</p>
+        <script src="chat_box.js"></script>
+        <script src="Darkmode_chatbox.js"></script>
+    </footer>
+</body>
+</html>

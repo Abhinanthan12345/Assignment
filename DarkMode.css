@@ -1,0 +1,9 @@
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer;
+    color: #cf63b8; /* Adjust the color to match your design */
+    z-index: 9999; /* Ensure it's above other content */
+}
